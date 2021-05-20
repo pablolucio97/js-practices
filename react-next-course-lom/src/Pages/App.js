@@ -4,16 +4,18 @@ import BigCard from './components/BigCard/Index'
  */
 
 import { PostsProvider } from "../context/with_reducer/PostsProvider"
+import { CounterProvider } from "../context/with_reducer/CounterProvider"
 import Posts from '../components/Posts'
 
 const App = () => {
-
-
+    
     return (
         <PostsProvider>
-            <div>
-                <Posts/>
-            </div>
+            <CounterProvider>
+                <div>
+                    <Posts />
+                </div>
+            </CounterProvider>
         </PostsProvider>
     )
 }

@@ -4,6 +4,7 @@ import { reducer } from './reducer';
 import { data } from './data';
 
 export const PostsProvider = ({ children }) => {
+
   const [postState, postDispatch] = useReducer(reducer, data);
 
   return (
